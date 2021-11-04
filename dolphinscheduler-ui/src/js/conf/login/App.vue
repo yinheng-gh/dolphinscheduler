@@ -53,7 +53,7 @@
         </p>
       </div>
       <div class="list" style="margin-top: 10px;">
-        <el-button id="button-login" style="width: 365px" type="primary" round :loading="spinnerLoading" long @click="_ok">{{spinnerLoading ? $t('Loading...') : ` ${$t('Login')} `}} </el-button>
+        <el-button id="button-login" class="login-button" style="" type="primary" round :loading="spinnerLoading" long @click="_ok">{{spinnerLoading ? $t('Loading...') : ` ${$t('Login')} `}} </el-button>
       </div>
     </div>
   </div>
@@ -189,6 +189,11 @@
         }
         &:last-child {
           margin-bottom: 6px;
+        }
+        .login-button {
+          width: 365px;
+          background: #0de006;
+           border-color: #0de006;
         }
       }
     }
